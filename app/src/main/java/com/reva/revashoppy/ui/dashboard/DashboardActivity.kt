@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.reva.revashoppy.R
 import com.reva.revashoppy.base.BaseActivity
+import com.reva.revashoppy.base.BaseActivityHelper
 import com.reva.revashoppy.common.DialogUtils
 import com.reva.revashoppy.databinding.ActivityDashboardBinding
 import com.reva.revashoppy.databinding.ActivityLoginBinding
@@ -23,6 +24,7 @@ class DashboardActivity : BaseActivity<ActivityDashboardBinding>(){
     private lateinit var progress: Dialog
 
     private val viewModel:    LoginViewModel by lazy { ViewModelProvider(this)[LoginViewModel::class.java] }
+    private lateinit var baseActivityHelper: BaseActivityHelper
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,14 +34,9 @@ class DashboardActivity : BaseActivity<ActivityDashboardBinding>(){
 
         progress = DialogUtils.showProgress(this)
 
+        baseActivityHelper = BaseActivityHelper(this)
 
-       /* enableEdgeToEdge()
-        setContentView(R.layout.activity_dashboard)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }*/
+
 
 
     }

@@ -35,7 +35,7 @@
         android:theme="@style/Theme.RevaShoppy"
         tools:targetApi="31">
         <activity
-            android:name=".ui.dashboard.DashboardActivity"
+            android:name=".ui.splashScreen.SplashScreenActivity"
             android:exported="false" />
         <activity
             android:name=".ui.completeProfile.CompleteProfileActivity"
@@ -44,7 +44,7 @@
             android:name=".ui.createAccount.CreateAccountActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.splashScreen.SplashScreenActivity"
+            android:name=".ui.dashboard.DashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
