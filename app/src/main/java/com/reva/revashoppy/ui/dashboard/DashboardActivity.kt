@@ -22,7 +22,7 @@ class DashboardActivity : BaseActivity<ActivityDashboardBinding>(){
 
     private lateinit var progress: Dialog
 
-    private val viewModel: LoginViewModel by lazy { ViewModelProvider(this)[LoginViewModel::class.java] }
+    private val viewModel:    LoginViewModel by lazy { ViewModelProvider(this)[LoginViewModel::class.java] }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
