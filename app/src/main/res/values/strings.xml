@@ -5,4 +5,14 @@
     <string name="cancel">Cancel</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_card">Add To Card</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="girl">Girl</string>
+    <string name="boy">Boy</string>
+    <string name="sport">Sport</string>
+    <string name="best_sale">Best sale</string>
+    <string name="popular">Popular</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="cart">Cart</string>
 </resources>

@@ -2,15 +2,15 @@ package com.reva.revashoppy.base
 
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.reva.revashoppy.R
-import com.reva.revashoppy.ui.dashboard.Fragments.CartFragment
-import com.reva.revashoppy.ui.dashboard.Fragments.CategoryFragment
-import com.reva.revashoppy.ui.dashboard.Fragments.HomeFragment
-import com.reva.revashoppy.ui.dashboard.Fragments.ProfileFragment
+import com.reva.revashoppy.ui.dashboard.fragments.CartFragment
+import com.reva.revashoppy.ui.dashboard.fragments.CategoryFragment
+import com.reva.revashoppy.ui.dashboard.fragments.FavoriteFragment
+import com.reva.revashoppy.ui.dashboard.fragments.HomeFragment
+import com.reva.revashoppy.ui.dashboard.fragments.ProfileFragment
 
 class BaseActivityHelper(private val activity: AppCompatActivity) {
 
@@ -30,16 +30,19 @@ class BaseActivityHelper(private val activity: AppCompatActivity) {
                 replaceFragment(true,cartfragment)
                 return@OnNavigationItemSelectedListener true
             }
+
             R.id.nav_category -> {
                 val categoryFragment = CategoryFragment()
                 replaceFragment(true,categoryFragment)
                 return@OnNavigationItemSelectedListener true
             }
+
             R.id.nav_favorite -> {
-                val profilefragment = ProfileFragment()
-                replaceFragment( true,profilefragment)
+                val favoriteFragment = FavoriteFragment()
+                replaceFragment( true,favoriteFragment)
                 return@OnNavigationItemSelectedListener true
             }
+
             R.id.nav_profile -> {
                 val profilefragment = ProfileFragment()
                 replaceFragment( true,profilefragment)

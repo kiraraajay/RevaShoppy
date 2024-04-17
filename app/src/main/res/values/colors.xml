@@ -15,5 +15,10 @@
     <color name="lightGray">#ECE9E9</color>
     <color name="midiomGray">#DDD8D8</color>
     <color name="bluedark">#38344d</color>
+    <color name="goldColor">#FFD700</color>
+    <color name="lightBlue">#F0EFFC</color>
+
+
+    <color name="red">#9C0000</color>
 
 </resources>
